@@ -1,0 +1,137 @@
+:root {
+	--Strong_cyan: hsl(172, 67%, 45%);
+	--Very_dark_cyan: hsl(183, 100%, 15%);
+	--Dark_grayish_cyan: hsl(186, 14%, 43%);
+	--Grayish_cyan: hsl(184, 14%, 56%);
+	--Light_grayish_cyan: hsl(185, 41%, 84%);
+	--Very_light_grayish_cyan: hsl(189, 41%, 97%);
+	--White: hsl(0, 0%, 100%);
+	--text-xl: 30px;
+	--text-l: 26px;
+	--text-m: 20px;
+	--text-s: 14px;
+}
+
+/*-------Globales y resets---------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Space Mono", monospace;
+	font-weight: 700;
+}
+input {
+	all: unset;
+	text-align: right;
+	font-size: var(--text-xl);
+}
+/* --------------------------------- */
+body {
+	height: 100vh;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--Light_grayish_cyan);
+	justify-content: space-between;
+}
+.container svg:first-child {
+	margin-top: 1rem;
+}
+.principal_box {
+	background-color: var(--Very_light_grayish_cyan);
+	width: 100%;
+	height: 85%;
+	border-radius: 1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ----------------BOX1------------ */
+.box1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 90%;
+	gap: 0.5rem;
+}
+.box1 label {
+	width: 95%;
+	color: var(--Grayish_cyan);
+}
+.box1 svg {
+	width: 10%;
+	height: 50px;
+	display: flex;
+	padding-top: 10px;
+}
+.box1 input {
+	width: 80%;
+}
+.box1 p {
+	width: 92%;
+	color: var(--Grayish_cyan);
+}
+.box1-button {
+	display: flex;
+	justify-content: center;
+	align-content: flex-end;
+	height: 40px;
+	width: 45%;
+	text-align: center;
+	border-radius: 0.5rem;
+	background-color: var(--Very_dark_cyan);
+}
+.box1-button:nth-child(4) {
+	background-color: var(--White);
+}
+.box1-button span {
+	padding-top: 8px;
+	color: var(--White);
+}
+/* ------------------------------------------ */
+/* ----------------BOX2----------------------- */
+.box2 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	background-color: var(--Very_dark_cyan);
+	align-self: center;
+	border-radius: 1rem;
+	padding: 1rem;
+	color: var(--White);
+	justify-content: center;
+}
+.box2 p {
+	font-size: var(--text-m);
+	width: 35%;
+}
+.box2 p span {
+	font-size: var(--text-s);
+	color: var(--Grayish_cyan);
+}
+#tip-amount {
+	width: 60%;
+	text-align: right;
+}
+#total {
+	width: 60%;
+	text-align: right;
+}
+.box2-button {
+	padding-top: 8px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 40px;
+	border-radius: 1rem;
+	width: 80%;
+	background-color: var(--Strong_cyan);
+}
+@media screen and (min-width: 920px) {
+}
